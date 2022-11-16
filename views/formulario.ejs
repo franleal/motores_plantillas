@@ -1,8 +1,10 @@
 
-<h1>Ingresar datos</h1>
-<br>
+
 
 <form action="/productos" method="post" name="productos" class="form_container">
+    <h1>Ingresar datos</h1>
+    <br>
+
     <div class="div_datos">
         <label for="title" class="label">Title</label>
         <input type="text" placeholder="Titulo del producto" id="title" name="title" class="">
@@ -10,10 +12,18 @@
     </div>
     
     <div class="div_datos">
-        <label for="price">Precio</label>
+        <label for="price" class="label">Precio</label>
         <input type="number" placeholder="Precio del producto" id="price" name="price">
         
     </div>
 
+    <div class="div_datos">
+        <label for="thumbnail" class="label">Imagen</label>
+        <input type="text" placeholder="link de la imagen" id="thumbnail" name="thumbnail" >
+        
+    </div>
+
     <button type="submit" class="button">Enviar</button>
+
+    <a class=""  href="/productos">Ver productos</a>
 </form>

@@ -10,6 +10,7 @@ const productos = new Contenedor("./productos.json");
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
+app.use(express.static('public'))
 
 app.set('views','./views')
 app.set('view engine','ejs')
